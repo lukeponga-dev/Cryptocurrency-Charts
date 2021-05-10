@@ -1,89 +1,121 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
     <title>Crypto Tracker</title>
 </head>
+
 <body>
+    <style>
+        body {
+            background-color: grey;
+        }
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Dashboard</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        #nav {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="charts.html">Technical Analysis </a>
-                </li>
-            </ul>
+        .navbar-brand {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+
+        .col {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="nav" class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-item nav-link active" href="charts.html">Technical Analysis </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
+
     <div class="container " style="margin-top: 25px;">
-        <div class="row">
-            <div class="col">
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com/symbols/ETHUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for ETHUSD</span></a> by TradingView</div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-            {
-                "interval": "1m",
-                    "width": 425,
-                        "isTransparent": false,
-                            "height": 450,
-                                "symbol": "BITSTAMP:ETHUSD",
-                                    "showIntervalTabs": true,
-                                        "locale": "uk",
-                                            "colorTheme": "dark"
-            }
-        </script>
-        </div>
-    </div>
+        <div class="row ">
             <div class="col">
                 <!-- TradingView Widget BEGIN -->
                 <div class="tradingview-widget-container">
                     <div class="tradingview-widget-container__widget"></div>
-                    <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com/symbols/BTCUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for BTCUSD</span></a> by TradingView</div>
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                    <div class="tradingview-widget-copyright"><a
+                            href="https://uk.tradingview.com/symbols/ETHUSD/technicals/" rel="noopener"
+                            target="_blank"><span class="blue-text">Technical Analysis for ETHUSD</span></a> by
+                        TradingView</div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
                         {
-                            "interval": "1m",
-                                "width": 425,
-                                    "isTransparent": false,
-                                        "height": 450,
-                                            "symbol": "BITSTAMP:BTCUSD",
-                                                "showIntervalTabs": true,
-                                                    "locale": "uk",
-                                                        "colorTheme": "dark"
+                            "interval":"1m",
+                            "width": 500,
+                            "isTransparent": true,
+                            "height": 500,
+                            "symbol": "BITSTAMP:ETHUSD",
+                            "showIntervalTabs": true,
+                            "locale": "nz",
+                            "colorTheme": "light"
                         }
                     </script>
                 </div>
+            </div>
+            <div class="col ">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a
+                            href="https://uk.tradingview.com/symbols/BTCUSD/technicals/" rel="noopener"
+                            target="_blank"><span class="blue-text">Technical Analysis for BTCUSD</span></a> by
+                        TradingView</div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                        {
+                            "interval": "1m",
+                            "width": 500,
+                            "isTransparent": true,
+                            "height": 500,
+                            "symbol": "BITSTAMP:BTCUSD",
+                            "showIntervalTabs": true,
+                            "locale": "nz",
+                            "colorTheme": "light"
+                        }
+                    </script>
+                </div>
+            </div>
         </div>
-</div>
-        </div>
+    </div>
 
-    <!-- TradingView Widget END -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script src="https://widget.nomics.com/embed.js"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
