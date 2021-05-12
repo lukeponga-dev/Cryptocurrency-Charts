@@ -13,16 +13,23 @@
     <title>Crypto Tracker</title>
 </head>
 
-<body>
+<body style="background-color:#131722;">
     <style>
-        body {
-            background-color: darkgrey;
-        }
 
-        #nav {
+        #nav a {
+            color: #d1d4dc;
             font-size: 20px;
             font-family: sans-serif;
             font-weight: 500;
+        }
+
+        #navId {
+            border-bottom: double;
+            border-color: white;
+            padding-top: 10px;
+            padding-bottom:10px;;
+            background-color: #131722;
+
         }
 
         .navbar-brand {
@@ -37,7 +44,7 @@
         }
     </style>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navId" class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Dashboard</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -65,6 +72,10 @@
                 <div class="nomics-ticker-widget" data-name="Ethereum" data-base="ETH" data-quote="NZD"></div>
             </div>
             <div class="col">
+                <div class="nomics-ticker-widget" data-name="HEX" data-base="HEX" data-quote="NZD"></div>
+            </div>
+
+            <div class="col">
                 <div class="nomics-ticker-widget" data-name="Cardano" data-base="ADA" data-quote="NZD"></div>
             </div>
             <div class="col">
@@ -77,14 +88,48 @@
                 <div class="nomics-ticker-widget" data-name="Monero" data-base="XMR" data-quote="NZD"></div>
             </div>
             <div class="col">
-                <div class="nomics-ticker-widget" data-name="Hex" data-base="HEX" data-quote="NZD"></div>
-            </div>
-            <div class="col">
                 <div class="nomics-ticker-widget" data-name="Bitcoin Cash" data-base="BCH" data-quote="NZD"></div>
             </div>
         </div>
     </div>
-
+    <br>
+    <div class="container">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div id="tradingview_368b8"></div>
+        <div class="tradingview-widget-copyright"><a
+                href="https://www.tradingview.com/symbols/BTCNZD/?exchange=CAPITALCOM" rel="noopener"
+                target="_blank"><span class="blue-text">BTCNZD Chart</span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget({
+                "width": 850,
+                "height": 500,
+                "symbol": "CAPITALCOM:BTCNZD",
+                "interval": "30",
+                "timezone": "Pacific/Auckland",
+                "theme": "dark",
+                "style": "1",
+                "locale": "en",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "withdateranges": true,
+                "allow_symbol_change": true,
+                "watchlist": [
+                    "CAPITALCOM:ETHNZD",
+                    "CAPITALCOM:BTCNZD",
+                    "HITBTC:HEXUSD",
+                    "KRAKEN:ADAUSD",
+                    "KRAKEN:XMRUSD"
+                ],
+                "details": true,
+                "hotlist": true,
+                "container_id": "tradingview_368b8"
+            });
+        </script>
+    </div>
+    </div>
+    <!-- TradingView Widget END -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -93,6 +138,7 @@
         integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous">
     </script>
     <script src="https://widget.nomics.com/embed.js"></script>
+
 
 
 </body>
