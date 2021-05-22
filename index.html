@@ -13,30 +13,11 @@
     <title>Crypto Tracker</title>
 </head>
 
-<body style="background-color:#131722;">
+<body style="background-color:gray;">
     <style>
 
-        #nav a {
-            color: #d1d4dc;
-            font-size: 20px;
-            font-family: sans-serif;
-            font-weight: 500;
-        }
 
-        #navId {
-            border-bottom: double;
-            border-color: white;
-            padding-top: 10px;
-            padding-bottom:10px;;
-            background-color: #131722;
 
-        }
-
-        .navbar-brand {
-            font-size: 20px;
-            font-family: sans-serif;
-            font-weight: 500;
-        }
 
         .col {
             margin-top: 10px;
@@ -44,15 +25,15 @@
         }
     </style>
 
-    <nav id="navId" class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Dashboard</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul id="nav" class="navbar-nav">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+  
                     <li class="nav-item">
                         <a class="nav-item nav-link active" href="index.html">Home</a>
                     </li>
@@ -90,10 +71,13 @@
             <div class="col">
                 <div class="nomics-ticker-widget" data-name="Bitcoin Cash" data-base="BCH" data-quote="NZD"></div>
             </div>
+            <div class="col">
+                <div class="nomics-ticker-widget" data-name="Polkadot" data-base="DOT" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
+            </div>
         </div>
     </div>
     <br>
-    <div class="container">
+    <div class="container-fluid">
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">
         <div id="tradingview_368b8"></div>
@@ -103,7 +87,7 @@
         <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
         <script type="text/javascript">
             new TradingView.widget({
-                "width": 850,
+                "width": 600,
                 "height": 500,
                 "symbol": "CAPITALCOM:BTCNZD",
                 "interval": "30",
