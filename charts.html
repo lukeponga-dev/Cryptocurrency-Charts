@@ -9,23 +9,21 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css">
 
     <title>Crypto Tracker</title>
 </head>
 
-<body style="background-color:gray;">
-    <style>
-
-    </style>
-
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Dashboard</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+<body style="background-color:rgb(78, 56, 56);">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-item nav-link active" href="index.html">Home</a>
                     </li>
@@ -36,86 +34,30 @@
             </div>
         </div>
     </nav>
-
-    <div class="container" style="margin-top:5px;">
-        <div class="row row-cols-md-2 ">
-            <div class="col">
-                <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container__widget"></div>
-                    <div class="tradingview-widget-copyright"><a
-                            href="https://uk.tradingview.com/symbols/ETHUSD/technicals/" rel="noopener"
-                            target="_blank"><span class="blue-text">Technical Analysis for ETHUSD</span></a> by
-                        TradingView</div>
-
-                    <script type="text/javascript"
-                        src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-                        {
-                            "interval": "1m",
-                            "width": 400,
-                            "isTransparent": false,
-                            "height": 450,
-                            "symbol": "BITSTAMP:ETHUSD",
-                            "showIntervalTabs": true,
-                            "locale": "nz",
-                            "colorTheme": "dark"
-                        }
-                    </script>
-
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
 
             </div>
+            <div class="col-sm">
+                <iframe src="https://hex.vision/goto/f6d58ab7119dfc1ab640c1b16939e446" height="450"
+                    width="600"></iframe>
 
-            <div class="col">
-                <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container__widget"></div>
-                    <div class="tradingview-widget-copyright"><a
-                            href="https://uk.tradingview.com/symbols/BTCUSD/technicals/" rel="noopener"
-                            target="_blank"><span class="blue-text">Technical Analysis for BTCUSD</span></a> by
-                        TradingView</div>
-                    <script type="text/javascript"
-                        src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-                        {
-                            "interval": "1m",
-                            "width": 400,
-                            "isTransparent": false,
-                            "height": 450,
-                            "symbol": "BITSTAMP:BTCUSD",
-                            "showIntervalTabs": true,
-                            "locale": "nz",
-                            "colorTheme": "dark"
-                        }
-                    </script>
+            </div>
+            <div class="col-sm">
+
             </div>
         </div>
 
-    <!-- TradingView Widget BEGIN -->
-    <div class="crypto_mkt">
-        <div class="tradingview-widget-copyright"><a
-                href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener"
-                target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView
-        </div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js"
-            async>
-            {
-                "width": "100%",
-                "height": "1000",
-                "defaultColumn": "performance",
-                "screener_type": "crypto_mkt",
-                "displayCurrency": "USD",
-                "colorTheme": "dark",
-                "locale": "en",
-                "isTransparent": false
-            }
-        </script>
     </div>
-</div>
-    <!-- TradingView Widget END -->
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous">
     </script>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
